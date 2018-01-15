@@ -58,5 +58,22 @@ console.log("1
   */
 
 
+console.log("string.raw");
+let tag1 = function(strings, ...values)
+{
+  console.log("strings        : " , strings);
+  console.log("strings[0]     : " , strings[0]);
+  console.log("strings[0].raw : " , strings[0].raw)
+  console.log("strings.raw[0] : " , strings.raw[0])
+  return strings.raw[0];
+}
+
+let str6 = tag1 `hihi!!\n hihi!!`;
+console.log(str6);
+
+
+
+
+
 
 
